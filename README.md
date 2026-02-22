@@ -29,18 +29,18 @@ The site will be available at `http://localhost:4000`.
 
 ## Structure
 
-| Path | Contents |
-|---|---|
-| `_pages/` | Static pages (about, publications, CV, projects, talks) |
-| `_bibliography/papers.bib` | Publications (rendered via jekyll-scholar) |
-| `_news/` | News and announcements |
-| `_projects/` | Research project pages |
-| `_data/cv.yml` | CV content |
-| `_data/coauthors.yml` | Coauthor name → profile URL mapping |
-| `_data/supervision.yml` | Student supervision records |
-| `_data/talks.yml` | Talks and presentations |
-| `assets/img/` | Images |
-| `_config.yml` | Site configuration |
+| Path                       | Contents                                                |
+| -------------------------- | ------------------------------------------------------- |
+| `_pages/`                  | Static pages (about, publications, CV, projects, talks) |
+| `_bibliography/papers.bib` | Publications (rendered via jekyll-scholar)              |
+| `_news/`                   | News and announcements                                  |
+| `_projects/`               | Research project pages                                  |
+| `_data/cv.yml`             | CV content                                              |
+| `_data/coauthors.yml`      | Coauthor name → profile URL mapping                     |
+| `_data/supervision.yml`    | Student supervision records                             |
+| `_data/talks.yml`          | Talks and presentations                                 |
+| `assets/img/`              | Images                                                  |
+| `_config.yml`              | Site configuration                                      |
 
 ---
 
