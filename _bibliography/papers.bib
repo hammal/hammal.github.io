@@ -1,26 +1,27 @@
 ---
 ---
 @article{FMWY:2024,
-   ABBR       = {TechRxiv},
+   ABBR       = {CSSP},
    AUTHOR     = {Fredrik Feyling
                AND Hampus Malmberg
                AND Carsten Wulff
                AND Trond Ytterdal},
-   TITLE      = {A Unified Analysis of Continuous-Time A/D Converters},
-   YEAR       = {2024},
-   MONTH      = {December},
+   TITLE      = {A Compiled 7th-order Leapfrog ADC in 130 nm CMOS},
+   JOURNAL    = {Circuits, Systems, and Signal Processing},
+   YEAR       = {2025},
    ABSTRACT   = {As a generalization of the continuous-time pipeline (CTP), we present a theoretical model that can be used to analyze any conventional continuous-time (CT) analog-to-digital converter (ADC). In addition to providing a unified approach for deriving reconstruction filter coefficients, the general model enables new ADC architectures that do not fit in the framework of neither the cascaded continuous-time sigma-delta modulators (CT-Σ∆Ms), nor the CTP ADCs. As an example exploiting this design flexibility, we present a 7th order Leapfrog ADC. The aggressive 7th order filter enables a low oversampling ratio (OSR), while stability is ensured by local digital feedback with single-bit quantizers. The modular structure makes it well-suited for a programmatic design methodology, and the layout of the ADC is generated using a custom-made Python tool for analog layout compilation. Implemented in a 130nm CMOS technology, the prototype achieves a dynamic range of 82 dB with an OSR of 11, while consuming 2.5 mW from a 1.5 V supply. The resulting Schreier figure-of-merit (FOM) is 168 dB.},
    SELECTED   = {false},
-   DOI = {10.36227/techrxiv.173473277.74602054/v1}
+   DOI        = {10.1007/s00034-025-03370-9}
 }
-@article{MF:2024,
-   ABBR       = {arXiv},
+@inproceedings{MF:2024,
+   ABBR       = {ISCAS},
    AUTHOR     = {Hampus Malmberg
                AND Fredrik Feyling},
    TITLE      = {The Continuous-Time RC-Chain ADC},
-   YEAR       = {2024},
+   BOOKTITLE  = {IEEE International Symposium on Circuits and Systems},
+   YEAR       = {2025},
+   MONTH      = {May},
    ARXIV      = {2410.16828},
-   MONTH      = {October},
    ABSTRACT   = {An amplifier-less continuous-time analog-to-digital converter consisting of only passives, comparators, and inverters is presented. Beyond simplicity, the architecture displays significant robustness properties with respect to component variations and comparator input offsets. We give an analytical design procedure demonstrating how to parameterize the architecture to a range of signal-to-noise and bandwidth requirements and validate the procedure's accuracy with behavioral transient simulations.},
    SELECTED   = {false},
 }
