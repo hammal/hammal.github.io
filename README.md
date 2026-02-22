@@ -1,24 +1,70 @@
-# My Academic Profile
+# Hampus Malmberg — Academic Website
 
-This is my personal webpage based of the [al-folio](https://github.com/alshedivat/al-folio) template.
+Personal academic website of [Hampus Malmberg](https://hammal.github.io), postdoctoral researcher at the [Signal and Information Processing Laboratory (ISI)](https://isi.ee.ethz.ch), ETH Zürich, and guest researcher at [NTNU Trondheim](https://www.ntnu.edu).
 
-#### Upgrading from a previous version
+Built with [Jekyll](https://jekyllrb.com) using the [al-folio](https://github.com/alshedivat/al-folio) theme.
 
-If you installed **al-folio** as described above, you can upgrade to the latest version as follows:
+---
+
+## Research
+
+- Control-bounded analog-to-digital and digital-to-analog converters
+- Factor graphs and Gaussian message passing
+- Model-based signal processing and sparse recovery
+
+---
+
+## Running Locally
+
+**Prerequisites:** Ruby, Bundler, ImageMagick
 
 ```bash
-# Assuming the current directory is <your-repo-name>
-$ git remote add upstream https://github.com/alshedivat/al-folio.git
-$ git fetch upstream
-$ git rebase v0.3.5
+bundle install
+bundle exec jekyll serve
 ```
 
-If you have extensively customized a previous version, it might be trickier to upgrade.
-You can still follow the steps above, but `git rebase` may result in merge conflicts that must be resolved.
-See [git rebase manual](https://help.github.com/en/github/using-git/about-git-rebase) and how to [resolve conflicts](https://help.github.com/en/github/using-git/resolving-merge-conflicts-after-a-git-rebase) for more information.
-If rebasing is too complicated, we recommend to re-install the new version of the theme from scratch and port over your content and changes from the previous version manually.
+The site will be available at `http://localhost:4000`.
 
-The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+---
 
-Originally, **al-folio** was based on the [\*folio theme](https://github.com/bogoli/-folio) (published by [Lia Bogoev](https://liabogoev.com) and under the MIT license).
-Since then, it got a full re-write of the styles and many additional cool features.
+## Structure
+
+| Path | Contents |
+|---|---|
+| `_pages/` | Static pages (about, publications, CV, projects, talks) |
+| `_bibliography/papers.bib` | Publications (rendered via jekyll-scholar) |
+| `_news/` | News and announcements |
+| `_projects/` | Research project pages |
+| `_data/cv.yml` | CV content |
+| `_data/coauthors.yml` | Coauthor name → profile URL mapping |
+| `_data/supervision.yml` | Student supervision records |
+| `_data/talks.yml` | Talks and presentations |
+| `assets/img/` | Images |
+| `_config.yml` | Site configuration |
+
+---
+
+## Keeping Up with al-folio
+
+This site tracks the upstream [al-folio](https://github.com/alshedivat/al-folio) template. To update the template infrastructure while preserving personal content:
+
+```bash
+git remote add upstream https://github.com/alshedivat/al-folio.git
+git fetch upstream
+
+# Take upstream template files (adjust paths as needed)
+git checkout upstream/master -- _includes/ _layouts/ _sass/ _plugins/
+git checkout upstream/master -- assets/js/ assets/css/ assets/fonts/ assets/webfonts/
+git checkout upstream/master -- Gemfile bin/ package.json requirements.txt
+
+# Manually merge _config.yml to preserve personal settings
+```
+
+Personal content (`_pages/`, `_news/`, `_projects/`, `_bibliography/`, `_data/`, `assets/img/`) is never taken from upstream.
+
+---
+
+## License
+
+The al-folio theme is available under the [MIT License](https://opensource.org/licenses/MIT).
+Site content (text, images, publications) is copyright Hampus Malmberg.
