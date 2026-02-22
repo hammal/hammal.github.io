@@ -7,8 +7,8 @@ subtitle:
 profile:
   align: right
   image: prof_pic.jpg
-  image_cicular: false # crops the image to make it circular
-  address: >
+  image_circular: false # crops the image to make it circular
+  more_info: >
     <p>ETF D 109.3 </p>
     <p>Sternwartstrasse 7</p>
     <p>8092 Zürich, Switzerland</p>
