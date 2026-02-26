@@ -2,28 +2,28 @@
 layout: about
 title: about
 permalink: /
-subtitle: 
+subtitle:
 
 profile:
   align: right
   image: prof_pic.jpg
-  image_cicular: false # crops the image to make it circular
-  address: >
-    <p>ETF D 109.3 </p>
-    <p>Sternwartstrasse 7</p>
-    <p>8092 Zürich, Switzerland</p>
+  image_circular: false # crops the image to make it circular
+  more_info: >
+    <p>Campus Valla, B-huset</p>
+    <p>Entrance 25, Room 3D:541</p>
+    <p>Linköping, Sweden</p>
 
-news: true  # includes a list of news items
+news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true  # includes social icons at the bottom of the page
+social: true # includes social icons at the bottom of the page
 ---
+
 ### affiliations
-- Postdoctoral researcher at the [signal and information processing laboratory (ISI)](https://isi.ee.ethz.ch), [**ETH, Zürich, Switzerland**](https://ethz.ch/en.html) 
-<!-- , under [Prof. Hans-Andrea Loeliger](http://people.ee.ethz.ch/~loeliger/). -->
-- Guest researcher at the [department of electronic systems](https://www.ntnu.edu/employees/ehmalmbe), [**NTNU, Trondheim, Norway**](https://www.ntnu.edu)
-<!-- , in collaboration with [Prof. Trond Ytterdal](https://www.ntnu.edu/employees/trond.ytterdal). -->
+
+- Assistant professor at the [division of electronics and computer engineering (ELDA)](https://liu.se/en/organisation/liu/isy/elda), [department of electrical engineering (ISY)](https://liu.se/en/organisation/liu/isy), [**Linköping University, Sweden**](https://liu.se/en)
 
 ## research interests
+
 - Control-bounded analog-to-digital and digital-to-analog converters
 - Factor graphs and Gaussian message passing
 - Model-based signal processing and sparse recovery problems
