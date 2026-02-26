@@ -13,9 +13,6 @@ This software was intended to provide the means of doing high level **analysis**
 **computing the filter coefficients** for control-bounded A/D converters.
 
 The software package has a comprehensive [documentation](https://cbadc.readthedocs.io/en/latest/index.html) where also the [installation instructions](https://cbadc.readthedocs.io/en/latest/index.html#installation) can be found.
-In addition to the [API documentation](https://cbadc.readthedocs.io/en/latest/api/api.html), there
-is also a growing number of [examples and tutorials](https://cbadc.readthedocs.io/en/latest/tutorials/index.html) demonstrating
-common use cases and capabilities of the software package.
 The project is an open source project and the source code is hosted on [github](https://github.com/hammal/cbadc).
 
 Since its release, many additional features have been added as this have proven a very useful tool (as a golden model)
